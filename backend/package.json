@@ -1,0 +1,21 @@
+{
+	"name": "@civitas/backend",
+	"private": true,
+	"scripts": {
+		"dev": "tsx watch src/server.ts",
+		"build": "tsc",
+		"start": "node dist/server.js",
+		"test": "vitest run",
+		"test:watch": "vitest"
+	},
+	"dependencies": {
+		"@types/express": "^5.0.6",
+		"@types/node": "^26.6.4",
+		"express": "^5.2.1",
+		"tsx": "^4.23.15",
+		"typescript": "^7.0.2"
+	},
+	"devDependencies": {
+		"vitest": "^5.0.3"
+	}
+}
