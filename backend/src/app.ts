@@ -1,9 +1,15 @@
 import express from "express";
-import healthRouter from "./routes/health.routes";
+import router from "./routes";
+import { notFound } from "./middlewares/notFound";
+import { errorHandler } from "./middlewares/errorHandler";
 
 const app = express();
 
 app.use(express.json());
-app.use("/health", healthRouter);
+
+app.use(router);
+
+app.use(notFound);
+app.use(errorHandler);
 
 export default app;
