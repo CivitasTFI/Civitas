@@ -1,6 +1,7 @@
 .env
 node_modules/
 dist/
+*.tsbuildinfo
 tarjetas_trello_sprint_1.md
 Prototipo_V1.1.pdf
 Propuesta Técnica TFI.pdf
