@@ -1,0 +1,32 @@
+// ==============================================================================
+// CIVITAS - ESQUEMA DE BASE DE DATOS (PRISMA ORM)
+// ==============================================================================
+//
+// NOTA ARQUITECTÓNICA - FASE 1 (MVP - HASTA 30/11):
+// Según la planificación oficial (planificacion_mvp_civitas_30-11.md) y las
+// directivas del prototipo (Prototipo_V1.1), el MVP funciona con una capa de
+// "Mock API en memoria" para cumplir con el alcance evaluable sin dependencias
+// externas de base de datos.
+//
+// FASE 2 (POST-MVP / PRODUCCIÓN REAL):
+// Este archivo está reservado para la definición de los modelos relacionales en
+// PostgreSQL una vez aprobado el MVP.
+//
+// Entidades previstas para Fase 2:
+// 1. Consorcio (Consorcios de copropietarios)
+// 2. UnidadFuncional (Departamentos, cocheras, locales)
+// 3. Residente / Persona (Propietarios e inquilinos)
+// 4. Profesional (Encargados, proveedores, mantenimiento)
+// 5. Reclamo (Tickets de incidencias de consorcistas)
+//
+// Ejemplo de configuración para Fase 2:
+//
+// datasource db {
+//   provider = "postgresql"
+//   url      = env("DATABASE_URL")
+// }
+//
+// generator client {
+//   provider = "prisma-client-js"
+// }
+// ==============================================================================
