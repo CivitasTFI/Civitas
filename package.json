@@ -6,6 +6,9 @@
         "dev": "pnpm --parallel --filter ./backend --filter ./frontend dev",
         "build": "pnpm --recursive build",
         "test": "pnpm --recursive test",
-        "test:watch": "pnpm --parallel --filter ./backend --filter ./frontend test:watch"
+        "test:watch": "pnpm --parallel --filter ./backend --filter ./frontend test:watch",
+        "docker:dev": "docker compose up --build",
+        "docker:prod": "docker compose -f docker-compose.prod.yml up --build",
+        "docker:down": "docker compose down"
     }
 }
